@@ -23,21 +23,27 @@
 
     <script src="javascript/main.js"></script>
 </head>
-<body>
+<body onload="preload()">
     <div class="div-contain-p">
         <p class="p-header">
             Xin chào!
         </p>
         <p class="p-content">
-            Tớ thích cậu :><br>
-            Cậu có thích tớ không?
+            Cậu ơi cho tớ hỏi<br>
+            Cậu có thích tớ không?<br>
+            Cậu hãy nói thật lòng<br>
+            Để chúng mình thành cặp
         </p>
+        <p class="p-content" id="conversation"></p>
     </div>
     
     <div class="div-contain-btn">
-        <button type="button" id="btn-yes" class="btn btn-success" onclick="clickBtnYes()">Có <3</button>
+        <button type="button" id="btn-yes" class="btn btn-success" onmouseover="mouseHoverBtnYes()" onmouseout="mouseOutBtnYes()" onclick="clickBtnYes()">Có <3</button>
         <button type="button" id="btn-no" class="btn btn-danger" onclick="clickBtnNo()" onmousemove="mouseHoverBtnNo(event)">Không :<</button>
     </div>
     
+    <div id="star-big"></div>
+    <div id="heart"></div>
+    <div id="diamond"></div>
 </body>
 </html>
